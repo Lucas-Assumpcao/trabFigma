@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro - Academia Top</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-    <header>
-        <h1>Academia Top</h1>
-        <hr>
-    </header>
-    <body>
-        <h1>Cadastro novo aluno:</h1>
-    <form action="">
-            <p>
-        <label for ="nome" >Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-        </p>
-        <p>
-        <label for="telefone">Telefone:</label>
-        <input type="number" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-            </p>
-        <p>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-        </p>
-        <p>
-        <label for="datadeNasc">Data de Nascimento:</label>
-        <input type="number" id="datadeNasc" name="datadeNasc" placeholder="Digite sua data de Nascimento" required>
-        </p>
-        <p>
-        <label for="mensagem"></label>
-        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" required cols="50" rows="5"></textarea>
-        </p>
-        <p>
-        <input type="submit" value="Enviar">
-        </p>    
-    </form>
-        <aside>
-         <p>“Transforme sua saúde e condicionamento físico em um ambiente moderno e
-             motivador, com equipamentos de ponta e acompanhamento profissional.
-              Aqui, cada treino aproxima você do seu melhor.” 💪</p>
-        </aside>
+<body>
 
-    </body>
+    <main class="container">
+        <header class="header">
+            <h1>Academia top</h1>
+        </header>
+
+        <section class="content-registration">
+            <div class="form-card">
+                <h3>Cadastro novo aluno:</h3>
+                
+                <form>
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-MAIL:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="sexo">Coloque seu sexo:</label>
+                        <input type="text" id="sexo" name="sexo">
+                    </div>
+
+                    <button type="submit" class="btn-ok">OK</button>
+                </form>
+            </div>
+
+            <div class="side-text">
+                <p>
+                    "Transforme sua saúde e condicionamento físico em um ambiente moderno e motivador, com equipamentos de ponta e acompanhamento profissional. Aqui, cada treino aproxima você do seu melhor." 💪
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
 </html>
